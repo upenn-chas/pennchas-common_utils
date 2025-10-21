@@ -1,0 +1,9 @@
+{
+  "name": "upenn/pennchas-common_utils",
+  "description": "Custom module common_utils extracted from site.",
+  "type": "drupal-module",
+  "license": "MIT",
+  "autoload": { "psr-4": { "Drupal\\common_utils\\": "src/" } },
+  "require": { "drupal/core": "^10" },
+  "extra": { "drupal": { "type": "module" } }
+}
