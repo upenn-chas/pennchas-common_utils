@@ -1,13 +1,13 @@
-name: 'Common Utils'
-description: 'Provides an common utility functions'
+name: Common Utils
+description: Provides an common utility functions
 type: module
 core_version_requirement: ^10
 version: 1.0
 package: Custom
 dependencies:
-  - drupal:field
-  - drupal:node
-  - drupal:user
-  - drupal:content_moderation
-  - drupal:group
+  - field
+  - node
+  - user
+  - content_moderation
+  - group
  
