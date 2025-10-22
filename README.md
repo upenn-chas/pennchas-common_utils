@@ -103,3 +103,20 @@ web/modules/custom/common_utils
 
 ## 🧩 Usage
 The **`common_utils`** module serves as a **centralized custom Drupal utility module** that consolidates reusable helper logic, services, and configurations shared across multiple custom modules within the **PennCHAS site**.
+
+This module is not meant to be used directly by end users but rather serves as a support module that other custom modules can depend on to keep code DRY (Don't Repeat Yourself), modular, and maintainable. 
+
+It Provides 
+● Reusable Services 
+● Constants and Static Utilities 
+● Trait Classes or Abstract Helpers 
+
+To Use It in Other Modules
+Inject common_utils services into your own custom classes via dependency injection:
+
+public function __construct(CommonFormatterService $formatter) {
+$this->formatter = $formatter; 
+} 
+
+Or retrieve it via the Drupal service container:
+\Drupal::service('common_utils.formatter')->formatTitle($value); 
